@@ -5,6 +5,28 @@
     margin:0;
     box-sizing: border-box;
 }
+.topnav{
+    background-color: #29323c;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+}
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 17px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* .topnav a.active{
+    background-color: blueviolet;
+} */
 html {
     /* font size10px; */
     font-family:'Monstserrat', sans-serif;
@@ -20,6 +42,7 @@ a {
     justify-content: center;
 }
 
+/* hero section */
 
 .section-title{
     font-size: 4rem;
@@ -52,8 +75,8 @@ a {
         transition-property: background-color, color;
     }
  .cta:hover{
-        color: white;
-        background-color: rgb(109, 42, 15);
+        color: blue;
+        background-color: burlywood;
     }
     .me h1{
         font-size: 3rem;
@@ -61,68 +84,15 @@ a {
         text-transform: uppercase;
         color:whitesmoke;
     }
-    .me h1{
-        font-size: 2.5rem;
-        text-transform: uppercase;
+    
 
-
-    }
-    .me h1{
-        color: ghostwhite;
-    }
-    /* heading */
-    #head{
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: auto;
-    }
-    #head .head{
-        min-height: 8vh;
-        background-color: rgba(31,20,30,0.24);
-    }
-    #head .navi-bar{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        max-width: 1300px;
-        padding: 0 10px;
-    }
-    #head .navi-list ul{
-        list-style: none;
-        position: absolute;
-        background:rgba(31,20,30,0.24) ;
-        width: 100vw;
-        height: 100vh;
-        left: 0; 
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        overflow-x: hidden;
-    }
-    #head .navi-list a{
-        font-size: 2rem;
-        font-weight: 500;
-        letter-spacing: .2rem;
-        text-decoration: none;
-        color: white;
-        
-    }
-    /* heading */
-    /* hero section */
     #hero{
-    background-image:url(./images/Tech-news.jpg);
+     background-image:url(./images/Tech-news.jpg); 
     background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
+    background-position: center;
+    position: initial;
+    padding-left: 15px;
+    padding-right: 15px;
     }
 #hero::after{
     content: '';
@@ -131,7 +101,7 @@ a {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color:rgb(255, 255, 255);
+    background-color: cornflowerblue;
     opacity: .7;
     z-index: -1;
 }
@@ -147,17 +117,17 @@ a {
     font-size: 4rem;
     position: relative;
     color: transparent;
-    animation: text_reveal .5s ease backwards;
-    animation-delay: 1s;
+    animation: text_reveal 10s ease backwards;
+    animation-delay: 5s;
 }
 #hero h1:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 #hero h1:nth-child(2){
-    animation-delay: 2s;
+    animation-delay: .7s;
 }
 #hero h1:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: .9s;
 }
 
 #hero h1 span{
@@ -166,7 +136,7 @@ a {
     left: 0;
     height: 100%;
     width: 0%;
-    background-color: rgb(60, 60, 104);
+    background-color: blue;
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
@@ -196,10 +166,9 @@ a {
         font-size: 1.4rem;
         margin-top: 5px;
         line-height: 2.5rem;
-        font-weight: 500;
+        font-weight: 300;
         letter-spacing: .05rem;
-        margin: 0 auto;
-        width: 500px;
+        color: #24e6b9;
     }
     #education .education-bottom{
         display: flex;
@@ -216,22 +185,28 @@ a {
         flex-direction: column;
         padding: 40px;
         border-radius: 15px;
-        background-image: url(./images/edu.jpg);
+        
         background-size: cover;
         margin: 10px 5%;
-        position: relative;
+        position: initial;
         overflow: hidden;
+        
+    }
+    .education{
+        background-image: url(./images/edu2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
     }
 
 #education .all-education::after{
     content: '';
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     opacity: .8;
-    z-index: -1;
 }
 
 #education .education-top .icon{
@@ -245,7 +220,7 @@ a {
     margin-bottom: 25px;
 }
 #education .all-education p{
-    color: rebeccapurple;
+    color: #993354;;
     text-align: left;
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -350,13 +325,20 @@ color: white;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
+   
+}
+.about{
+    background-image: url(./images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 #about .col-left{
     width: 250px;
     height: 360px;
 }
 #about .col-right{
-     /* width: 100px;  */
+    /* width: 100px; */
 }
 #about .col-right h2{
     font-size: 1.5rem;
@@ -366,6 +348,7 @@ color: white;
 }
 #about .col-right p{
     margin-bottom: 20px;
+    font-size: larger;
 }
 #about .col-right .cta{
     color: black ;
@@ -375,7 +358,7 @@ color: white;
 #about .col-left .about-image{
     height: 100%;
     width: 100%;
-    position: relative;
+    position: initial;
     margin-left: auto;
     margin-right: auto;
 }
@@ -418,7 +401,7 @@ color: white;
 #contact .icon{
     width: 70px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 #contact .cont-info h1{
 font-size: 2.3rem;
@@ -443,6 +426,7 @@ margin-bottom: 5px;
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 10px;
+    text-align: center;
 }
 #footer h2{
     color:whitesmoke;
@@ -462,6 +446,8 @@ margin-bottom: 5px;
     height: 50px;
     width: 50px;
     margin: 0 4px;
+    text-align: center;
+
 }
 #footer p{
     color: white;
@@ -541,8 +527,8 @@ margin-bottom: 5px;
 }
 /* endkeyframes */
 /* Quiry for T */
-@media only screen and (min-width:768px){
-    .cta{
+@media only screen and (min-width:800px){
+    .cta,.wskill, .wskill-info{
         font-size: 2.4rem;
         padding:20px 60px
     }
@@ -584,11 +570,3 @@ margin-bottom: 5px;
 /* About */
 }
 /* nedQuiry for T */
- /* Media quiry for desk */
- @media only screen and (min-width:1200px){
-     #education .education-bottom .all-education{
-         flex-basis: 52%;
-         margin: 1.5%;
-     }
- }
- /* Media quiry for desk */
