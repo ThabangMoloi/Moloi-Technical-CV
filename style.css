@@ -388,7 +388,7 @@ color: white;
     padding: 0;
 }
 .contact{
-    background-image: url("images/wow.jpg");
+    background-image: url("images/backimg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -418,7 +418,7 @@ color: white;
 font-size: 2.3rem;
 font-weight: 500;
 margin-bottom: 5px;
-color:#85e834
+color:#dde834
 }
 
 #contact .cont-info h2{
