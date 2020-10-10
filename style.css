@@ -523,8 +523,7 @@ margin-bottom: 5px;
         width:40%;
     }
 }
-/* endkeyframes */
-/* Quiry for T */
+
 @media only screen and (min-width:800px){
     .cta,.wskill, .wskill-info{
         font-size: 2.4rem;
@@ -533,19 +532,14 @@ margin-bottom: 5px;
     h1.section-title{
         font-size: 6rem;
     }
-    /* hero */
+    
     #hero h1{
         font-size: 6.5rem;
     }
-    /* fin.hero */
-/* Edu */
 .education .education-bottom .all-education{
     flex-basis: 45%;
     margin: 1.5%;
 }
-/* end Edu */
-
-/* About */
 #about .about{
     flex-direction: row;
 }
