@@ -337,9 +337,7 @@ color: white;
     width: 250px;
     height: 360px;
 }
-#about .col-right{
-    /* width: 100px; */
-}
+
 #about .col-right h2{
     font-size: 1.5rem;
    font-weight: 500;
@@ -567,6 +565,4 @@ margin-bottom: 5px;
     text-align: left;
     padding-left: 35px;
 }
-/* About */
 }
-/* nedQuiry for T */
