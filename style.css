@@ -228,11 +228,16 @@ a {
 
 /* End Education Section */
 /* Work section */
+.wskill {
+    background-image: url("images/edu2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
  #wskill .wskill{
      flex-direction: column;
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 100px 0;
+     margin: 0;
+     padding:0;
  }
  #wskill .wskill-heading h1{
      margin-bottom: 20px;
@@ -379,31 +384,30 @@ color: white;
 /* Contac me */
 #contact .contact{
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 .contact{
-    background-image: url("images/backimg.jpg");
+    background-image: url("images/images.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
 }
 #contact .cont-items{
-    width: 100%;
+    width: 80%;
     
 }
 #contact .cont-item{
-    width: 80%;
-    padding: 20px;
+    width: 90%;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
-    margin: 30px;
+    margin: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 1px 0px 15px 0 black;
+    box-shadow: 1px 0px 15px 0 #dde834;
 }
 #contact .icon{
     width: 70px;
@@ -414,13 +418,14 @@ color: white;
 font-size: 2.3rem;
 font-weight: 500;
 margin-bottom: 5px;
+color:#85e834
 }
 
 #contact .cont-info h2{
     font-size: 1.3rem;
     line-height: 1.5rem;
     font-weight: 500;
-    
+    color: #34b5e8;
     }
 /* endContac me */
 
