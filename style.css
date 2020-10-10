@@ -542,7 +542,8 @@ color:#dde834
 @media only screen and (min-width:800px){
     .cta,.wskill, .wskill-info{
         font-size: 2.4rem;
-        padding:20px 60px
+        padding:20px 60px;
+        max-width: 1000px;
     }
     h1.section-title{
         font-size: 6rem;
