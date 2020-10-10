@@ -328,7 +328,7 @@ color: white;
    
 }
 .about{
-    background-image: url(./images/download.jpg);
+    background-image: url("images/edu2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -445,6 +445,7 @@ margin-bottom: 5px;
     width: 50px;
     margin: 0 4px;
     text-align: center;
+    right: 50%;
 
 }
 #footer p{
