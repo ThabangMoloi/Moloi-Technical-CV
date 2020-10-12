@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); 
 *{
     font-family: sans-serif;
     padding: 0;
@@ -10,7 +10,6 @@
     overflow: hidden;
     position: fixed;
     width: 100%;
-
 }
 .topnav a{
     float: left;
@@ -24,11 +23,7 @@
     background-color: #ddd;
     color: black;
 }
-/* .topnav a.active{
-    background-color: blueviolet;
-} */
 html {
-    /* font size10px; */
     font-family:'Monstserrat', sans-serif;
 }
 a {
@@ -41,9 +36,7 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 /* hero section */
-
 .section-title{
     font-size: 4rem;
     font-weight: 300;
@@ -53,14 +46,11 @@ a {
     letter-spacing: .2rem;
     text-align: center;
     background-color: aqua;
-
 }
-
 .section-title span
     {
         color: rebeccapurple;
     }
-
  .cta{
         display: inline-block;
         padding: 10px 30px;
@@ -84,8 +74,6 @@ a {
         text-transform: uppercase;
         color:whitesmoke;
     }
-    
-
     #hero{
      background-image:url(./images/Tech-news.jpg); 
     background-size: cover;
@@ -129,7 +117,6 @@ a {
 #hero h1:nth-child(3){
     animation-delay: .9s;
 }
-
 #hero h1 span{
     position: absolute;
     top: 0;
@@ -149,10 +136,7 @@ a {
 #hero h1:nth-child(3)span{
     animation-delay: 2.5s;
 }
-
-
 /* end hero section */
-
 /* Education Section */
     #education .education{
         flex-direction: column;
@@ -160,7 +144,6 @@ a {
         margin: 0;
         padding:0;
     }
-    
     #education .education-top p{
         font-size: 1.4rem;
         margin-top: 5px;
@@ -184,12 +167,10 @@ a {
         flex-direction: column;
         padding: 40px;
         border-radius: 15px;
-        
         background-size: cover;
         margin: 10px 5%;
         position: initial;
-        overflow: hidden;
-        
+        overflow: hidden;      
     }
     .education{
         background-image: url(./images/edu2.jpg);
@@ -198,7 +179,6 @@ a {
         background-position: top;
         width: 100%;
     }
-
 #education .all-education::after{
     content: '';
     position: relative;
@@ -208,7 +188,6 @@ a {
     width: 100%;
     opacity: .8;
 }
-
 #education .education-top .icon{
     height: 80px;
     width: 80px;
@@ -225,17 +204,16 @@ a {
     font-size: 1.5rem;
     line-height: 1.8rem;
 }
-
-/* End Education Section */
-/* Work section */
 .wskill {
     background-image: url("images/edu2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    width: 100%;
 }
  #wskill .wskill{
      flex-direction: column;
+     text-align: center;
      margin: 0;
      padding:0;
  }
@@ -248,7 +226,6 @@ a {
      justify-content: center;
      flex-direction: column;
  }
-
  #wskill .wskill-item{
      display: flex;
      align-items: center;
@@ -267,8 +244,7 @@ a {
      display: flex;
      align-items: flex-start;
      justify-content: center;
-     flex-direction: column;
-     
+     flex-direction: column;    
  }
  #wskill .wskill-info h1{
      font-size: 4rem;
@@ -277,9 +253,8 @@ a {
  #wskill .wskill-info p{
 color: white; 
 }
-
 .skills{
-    width: 500px;
+    width: 100%;
     margin: 20px auto;
     color:black;
 }
@@ -322,14 +297,12 @@ color: white;
     animation: javascript 2s;
 }
 /* Work section */
-
 /* About Moloi */
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
     margin: 0 auto;
     padding:0;
-   
 }
 .about{
     background-image: url("images/download.jpg");
@@ -380,7 +353,6 @@ color: white;
  }
 
 /* finishAbout Moloi */
-
 /* Contac me */
 #contact .contact{
     flex-direction: column;
@@ -420,7 +392,6 @@ font-weight: 500;
 margin-bottom: 5px;
 color:#dde834
 }
-
 #contact .cont-info h2{
     font-size: 1.3rem;
     line-height: 1.5rem;
@@ -428,7 +399,6 @@ color:#dde834
     color: #34b5e8;
     }
 /* endContac me */
-
 /* footer */
 #footer{
     background-image: linear-gradient(50deg, #29323c 0%, #485563 100%);
@@ -460,14 +430,12 @@ color:#dde834
     margin: 0 4px;
     text-align: center;
     right: 50%;
-
 }
 #footer p{
     color: white;
     font-size: 1rem;
 }
 /* endfooter */
-
 /* keyframes */
 @keyframes text_reveal_box{
     50%{
@@ -539,7 +507,7 @@ color:#dde834
     }
 }
 
-@media only screen and (min-width:800px){
+@media only screen and (min-width:1200px){
     .cta,.wskill, .wskill-info{
         font-size: 2.4rem;
         padding:20px 60px;
@@ -574,5 +542,22 @@ color:#dde834
 #about .col-right{
     text-align: left;
     padding-left: 35px;
+}
+#contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+#contact .cont-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0;
+}
+#contact .cont-items{
+    margin: 20px;
 }
 }
